@@ -16,13 +16,26 @@ class EducationViewController: UIViewController {
         super.viewDidLoad()
         
         educationalTableView.dataSource = self
+        educationalTableView.delegate = self
     }
 }
 
 // MARK: UITableViewDataSource
 extension EducationViewController: UITableViewDataSource {
+    
+    // Ponemos el numero de secciones que tiene mi tabla.
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    // Aquí se configura que sección y como se pinta.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        myCountries.count
+        return if (section == 0) {
+            myCountries.count
+        } else {
+            2
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -32,6 +45,7 @@ extension EducationViewController: UITableViewDataSource {
         if cell == nil {
             cell = UITableViewCell(style: .default, reuseIdentifier: "itemCell")
             // Aquí tenemos que modificar la información de la tabla.
+            cell?.selectionStyle = .none
         }
         
         cell!.textLabel?.text = myCountries[indexPath.row]
@@ -39,3 +53,10 @@ extension EducationViewController: UITableViewDataSource {
     }
 }
 
+extension EducationViewController: UITableViewDelegate {
+    
+    // así obtenemos el click en cada elemento.
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+    }
+}
