@@ -9,10 +9,10 @@ import UIKit
 import MapKit
 
 class MeControllerViewController: UIViewController {
-
-    @IBOutlet var textDescription: UILabel!
-    @IBOutlet weak var peronalMap: MKMapView!
+    
     @IBOutlet var textPlace: UILabel!
+    @IBOutlet var textDescription: UILabel!
+    @IBOutlet var personalMapNorman: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,7 @@ class MeControllerViewController: UIViewController {
         textPlace.text = "📌 I live in Chalco, State of Mexico. My native language is Spanish 🇲🇽, and I am also fluent in English. 🇺🇸"
         
         let initialLocation = CLLocationCoordinate2D(latitude: 19.264722222222, longitude: -98.8975)
-        peronalMap.setRegion(MKCoordinateRegion(center: initialLocation, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)), animated: true)
+        personalMapNorman.setRegion(MKCoordinateRegion(center: initialLocation, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)), animated: true)
     }
     
 }
