@@ -15,7 +15,6 @@ class EducationViewController: UIViewController {
         super.viewDidLoad()
         
         educationalTableView.dataSource = self
-        educationalTableView.delegate = self
         educationalTableView.register(UINib(nibName: "EducationalTableViewCell", bundle: nil), forCellReuseIdentifier: "educationalCustomItem")
     }
 }

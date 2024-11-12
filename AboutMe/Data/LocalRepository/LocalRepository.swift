@@ -23,3 +23,11 @@ let myVolunteers = [Education(
     description: "Realicé un libro de electrónica básica para un taller.",
     image: "cenart"
 )]
+
+let myExperience = [Experience(
+    image: "accenture_logo",
+    company: "Accenture",
+    rangeOfDates: "2024 - Presente",
+    description: "Estuve aprendiendo a desarrollar aplicaciones móviles en iOS.",
+    role: "Android Developer"
+)]

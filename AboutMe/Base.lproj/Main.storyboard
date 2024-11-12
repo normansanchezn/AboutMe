@@ -17,56 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDI-lQ-oKL">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mEH-uf-6q4">
                                 <rect key="frame" x="0.0" y="59" width="393" height="710"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VO5-G0-NDL">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="710"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0z-LI-8dg">
-                                                <rect key="frame" x="24" y="24" width="146.33333333333334" height="34"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accenture_logo" translatesAutoresizingMaskIntoConstraints="NO" id="UEw-zz-gK9">
-                                                <rect key="frame" x="16" y="74" width="70" height="70"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="70" id="5K5-nx-XTD"/>
-                                                    <constraint firstAttribute="height" constant="70" id="5km-cO-IHW"/>
-                                                </constraints>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstItem="I0z-LI-8dg" firstAttribute="leading" secondItem="VO5-G0-NDL" secondAttribute="leading" constant="24" id="f1d-QB-RAp"/>
-                                            <constraint firstItem="UEw-zz-gK9" firstAttribute="top" secondItem="I0z-LI-8dg" secondAttribute="bottom" constant="16" id="k21-sI-gnh"/>
-                                            <constraint firstItem="I0z-LI-8dg" firstAttribute="top" secondItem="VO5-G0-NDL" secondAttribute="top" constant="24" id="lZU-aV-uaA"/>
-                                            <constraint firstItem="UEw-zz-gK9" firstAttribute="leading" secondItem="VO5-G0-NDL" secondAttribute="leading" constant="16" id="vqV-u6-PUv"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="VO5-G0-NDL" firstAttribute="leading" secondItem="bDI-lQ-oKL" secondAttribute="leading" id="9Hh-26-rKw"/>
-                                    <constraint firstAttribute="bottom" secondItem="VO5-G0-NDL" secondAttribute="bottom" id="J9F-Yl-VNU"/>
-                                    <constraint firstItem="VO5-G0-NDL" firstAttribute="centerY" secondItem="bDI-lQ-oKL" secondAttribute="centerY" id="Y2G-bb-GL2"/>
-                                    <constraint firstAttribute="trailing" secondItem="VO5-G0-NDL" secondAttribute="trailing" id="ZDO-3q-nxZ"/>
-                                    <constraint firstItem="VO5-G0-NDL" firstAttribute="top" secondItem="bDI-lQ-oKL" secondAttribute="top" id="e47-H8-ROI"/>
-                                    <constraint firstItem="VO5-G0-NDL" firstAttribute="centerX" secondItem="bDI-lQ-oKL" secondAttribute="centerX" id="p9K-7h-fc3"/>
-                                </constraints>
-                            </scrollView>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="bDI-lQ-oKL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="QMK-Ym-5T5"/>
-                            <constraint firstItem="bDI-lQ-oKL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZN3-2G-jvY"/>
-                            <constraint firstAttribute="trailing" secondItem="bDI-lQ-oKL" secondAttribute="trailing" id="hRf-Hp-fjE"/>
-                            <constraint firstItem="bDI-lQ-oKL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wdr-gt-cMv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mEH-uf-6q4" secondAttribute="bottom" id="Cv1-Il-J2O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mEH-uf-6q4" secondAttribute="trailing" id="Kri-GE-O4J"/>
+                            <constraint firstItem="mEH-uf-6q4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cnW-e3-Pe6"/>
+                            <constraint firstItem="mEH-uf-6q4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="m8V-qS-kwd"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Experience" image="network" catalog="system" id="fkP-hA-C2l"/>
                     <navigationItem key="navigationItem" id="ZkK-Jf-JKZ"/>
+                    <connections>
+                        <outlet property="experienceTableView" destination="mEH-uf-6q4" id="a0k-Am-pDU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -212,7 +181,6 @@
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
-        <image name="accenture_logo" width="800" height="800"/>
         <image name="graduationcap.fill" catalog="system" width="128" height="108"/>
         <image name="network" catalog="system" width="128" height="123"/>
         <image name="norman_photo" width="769" height="769"/>

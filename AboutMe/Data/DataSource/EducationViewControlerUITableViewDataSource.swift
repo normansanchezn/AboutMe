@@ -7,7 +7,7 @@
 
 import UIKit
 
-// MARK: UITableViewDataSource
+// MARK: Educational UITableViewDataSource
 extension EducationViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

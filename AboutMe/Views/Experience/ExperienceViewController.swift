@@ -8,7 +8,12 @@
 import UIKit
 
 class ExperienceViewController: UIViewController {
+    
+    @IBOutlet var experienceTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        experienceTableView.dataSource = self
+        experienceTableView.register(UINib(nibName: "ExperienceTableViewCell", bundle: nil), forCellReuseIdentifier: "experienceTableViewCustomCell")
     }
 }
