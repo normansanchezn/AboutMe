@@ -28,6 +28,7 @@ extension ExperienceViewController: UITableViewDataSource {
         cell?.imageExperience.image = UIImage(named:myExperience[indexPath.row].image)
         cell?.titleExperience.text = myExperience[indexPath.row].role
         cell?.shortDescriptionExperience.text = myExperience[indexPath.row].description
+        cell?.periodOfTime.text = myExperience[indexPath.row].rangeOfDates
         
         return cell!
     }

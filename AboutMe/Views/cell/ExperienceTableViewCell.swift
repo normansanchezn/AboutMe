@@ -13,6 +13,7 @@ class ExperienceTableViewCell: UITableViewCell {
     @IBOutlet var titleExperience: UILabel!
     @IBOutlet var companyExperience: UILabel!
     @IBOutlet var shortDescriptionExperience: UILabel!
+    @IBOutlet var periodOfTime: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,6 +23,7 @@ class ExperienceTableViewCell: UITableViewCell {
     private func setupView() {
         titleExperience.font = .preferredFont(forTextStyle: .headline)
         companyExperience.font = .preferredFont(forTextStyle: .subheadline)
+        periodOfTime.font = .preferredFont(forTextStyle: .subheadline)
         shortDescriptionExperience.font = .preferredFont(forTextStyle: .body)
     }
 
